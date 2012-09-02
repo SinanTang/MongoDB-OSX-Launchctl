@@ -17,14 +17,14 @@ If you [download mongo](http://www.mongodb.org/display/DOCS/Downloads) directly,
 
 Create the DB directory and a log file
 ---
-    sudo mkdir -p /opt/local/var/db/mongodb
-    sudo mkdir -p /opt/local/var/log/
-    sudo touch /opt/local/var/log/mongodb.log
+  sudo mkdir -p /opt/local/var/db/mongodb
+  sudo mkdir -p /opt/local/var/log/
+  sudo touch /opt/local/var/log/mongodb.log
 		
 Create a configuration file
 ---
-    sudo mkdir -p /opt/local/etc/mongodb
-    sudo cp mongod.conf /opt/local/etc/mongodb/
+  sudo mkdir -p /opt/local/etc/mongodb
+  sudo cp mongod.conf /opt/local/etc/mongodb/
 
 More on configuration file: http://www.mongodb.org/display/DOCS/File+Based+Configuration		
 
@@ -34,8 +34,6 @@ Install/Reinstall Launchctl Item:
 ---
     sudo cp org.mongo.mongod.plist /System/Library/LaunchDaemons/.
     sudo chown root:wheel /System/Library/LaunchDaemons/org.mongo.mongod.plist
-    sudo launchctl stop org.mongo.mongod
-    sudo launchctl unload /System/Library/LaunchDaemons/org.mongo.mongod.plist
     sudo launchctl load /System/Library/LaunchDaemons/org.mongo.mongod.plist
     sudo launchctl start org.mongo.mongod`
 
