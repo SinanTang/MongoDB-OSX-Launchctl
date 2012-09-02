@@ -1,5 +1,8 @@
-MongoDB OSX Snow Leopard Launchctl Item
+MongoDB Mac OS X Mountain Lion Launchctl Item
 ===
+
+Forked from https://github.com/AndreiRailean/MongoDB-OSX-Launchctl
+
 Configure MongoDB to start when Mac OSX system boots.
 
 Mongo Installation
@@ -17,6 +20,13 @@ Create the DB directory and a log file
     sudo mkdir -p /opt/local/var/db/mongodb
     sudo mkdir -p /opt/local/var/log/
     sudo touch /opt/local/var/log/mongodb.log
+		
+Create a configuration file
+---
+		sudo mkdir -p /opt/local/etc/mongodb
+		sudo cp mongod.conf /opt/local/etc/mongodb/
+
+More on configuration file: http://www.mongodb.org/display/DOCS/File+Based+Configuration		
 
 These locations were chosen because that is how most of the other stuff like **mysql** and **redis** gets installed.
 
@@ -47,4 +57,6 @@ If you would prefer to install a mac StartupItem (instead of Launchctl item) use
 
 Idea for this was borrowed from an [article on "Cupcake With Sprinkles" blog](http://www.cupcakewithsprinkles.com/mongodb-startup-item/)
 
-Tested with Mongo **1.4.2** and Mac 10.6.3 (**Snow Leopard**) on **4 May 2010**
+Forked from https://github.com/AndreiRailean/MongoDB-OSX-Launchctl
+
+Tested with Mongo **2.0.7** and Mac 10.8.1 (**Mountain Lion**) on **1 Sep 2012**
