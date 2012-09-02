@@ -23,8 +23,8 @@ Create the DB directory and a log file
 		
 Create a configuration file
 ---
-		sudo mkdir -p /opt/local/etc/mongodb
-		sudo cp mongod.conf /opt/local/etc/mongodb/
+    sudo mkdir -p /opt/local/etc/mongodb
+    sudo cp mongod.conf /opt/local/etc/mongodb/
 
 More on configuration file: http://www.mongodb.org/display/DOCS/File+Based+Configuration		
 
