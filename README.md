@@ -15,16 +15,16 @@ Mongo daemon location is assumed to be **`/opt/local/bin/mongod`**
 
 If you [download mongo](http://www.mongodb.org/display/DOCS/Downloads) directly, you need to copy all files inside the bin directory to /opt/local/bin as root. Once you do that, the rest of this guide will apply to you.
 
-Create the DB directory and a log file
+Create the DB directory and a log file:
 ---
-  sudo mkdir -p /opt/local/var/db/mongodb
-  sudo mkdir -p /opt/local/var/log/
-  sudo touch /opt/local/var/log/mongodb.log
+    sudo mkdir -p /opt/local/var/db/mongodb
+    sudo mkdir -p /opt/local/var/log/
+    sudo touch /opt/local/var/log/mongodb.log
 		
-Create a configuration file
+Create a configuration file:
 ---
-  sudo mkdir -p /opt/local/etc/mongodb
-  sudo cp mongod.conf /opt/local/etc/mongodb/
+    sudo mkdir -p /opt/local/etc/mongodb
+    sudo cp mongod.conf /opt/local/etc/mongodb/
 
 More on configuration file: http://www.mongodb.org/display/DOCS/File+Based+Configuration		
 
