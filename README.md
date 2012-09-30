@@ -49,6 +49,10 @@ Configuration
 ---
 If your paths are different, you'll need to manually change both the plist file and install script
 
+Install from HomeBrew
+
+    brew install mongodb
+
 Other Info
 ---
 If you would prefer to install a mac StartupItem (instead of Launchctl item) use [mongodb-mac-startup](http://github.com/bratta/mongodb-mac-startup)
